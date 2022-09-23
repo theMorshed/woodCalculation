@@ -1,6 +1,6 @@
 // flat wood calculation
 document.getElementById('flat-wood-btn-calculate').addEventListener('click', function () {
-    const length = getValue('length-field');
+    const length = getValue('length-field') / 12;
     const width = getValue('width-field');
     const thickness = getValue('thickness-field');
     const resultField = document.getElementById('result-field');
@@ -18,7 +18,7 @@ document.getElementById('flat-wood-btn-calculate').addEventListener('click', fun
 });
 
 // round wood calculation
-document.getElementById('round-wood-btn-calculate').addEventListener('click', function(){
+document.getElementById('round-wood-btn-calculate').addEventListener('click', function () {
     let length = getValue('round-wood-length-field');
     let round = getValue('round-wood-round-field');
     const resultField = document.getElementById('round-wood-result-field');
